@@ -1,4 +1,4 @@
-version: ''
+version: '3.0'
 
 services:
   kafka1:
