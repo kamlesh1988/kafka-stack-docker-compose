@@ -1,4 +1,4 @@
-version: '2.1'
+version: ''
 
 services:
   kafka1:
@@ -16,7 +16,7 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
       - ./zk-single-kafka-single/kafka1/data:/var/lib/kafka/data
-    links:
+    external_links:
       - zoo1
       - zoo2
       - zoo3
